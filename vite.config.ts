@@ -6,6 +6,6 @@ export default defineConfig({
   plugins: [react()],
   base: '/eczane/',
   build: {
-    outDir: 'dist',
+    outDir: 'docs',
   }
 })

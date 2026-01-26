@@ -1,0 +1,516 @@
+{
+    "month": "2026-02",
+    "days": {
+        "2026-02-01": [
+            {
+                "ad": "Esra Nur Eczanesi",
+                "il": "Kilis",
+                "ilce": "Merkez",
+                "mahalle": "Yavuz Sultan Selim Mah.",
+                "adres": "Taştepe Sk. No:5/B",
+                "telefon": "03488137172",
+                "maps": "https://www.google.com/maps/search/?api=1&query=Esra+Nur+Eczanesi+Kilis",
+                "saat": "08:30-19:30",
+                "kart": true,
+                "sgk": true,
+                "nobetci": true
+            }
+        ],
+        "2026-02-02": [
+            {
+                "ad": "Gamze Eczanesi",
+                "il": "Kilis",
+                "ilce": "Merkez",
+                "mahalle": "Mehmet Rıfat Kazancıoğlu Mah.",
+                "adres": "Sabit Erentürk Cd. No:26/A",
+                "telefon": "03488142474",
+                "maps": "https://www.google.com/maps/search/?api=1&query=Gamze+Eczanesi+Kilis",
+                "saat": "08:30-19:30",
+                "kart": true,
+                "sgk": true,
+                "nobetci": true
+            }
+        ],
+        "2026-02-03": [
+            {
+                "ad": "Gamze Eczanesi",
+                "il": "Kilis",
+                "ilce": "Merkez",
+                "mahalle": "Mehmet Rıfat Kazancıoğlu Mah.",
+                "adres": "Sabit Erentürk Cd. No:26/A",
+                "telefon": "03488142474",
+                "maps": "https://www.google.com/maps/search/?api=1&query=Gamze+Eczanesi+Kilis",
+                "saat": "08:30-19:30",
+                "kart": true,
+                "sgk": true,
+                "nobetci": true
+            }
+        ],
+        "2026-02-04": [
+            {
+                "ad": "Göktürk Eczanesi",
+                "il": "Kilis",
+                "ilce": "Merkez",
+                "mahalle": "Yaşar Aktürk Mah.",
+                "adres": "Av. Mehmet Abdi Bulut Cd. No:15/D",
+                "telefon": "05451747996",
+                "maps": "https://www.google.com/maps/search/?api=1&query=Göktürk+Eczanesi+Kilis",
+                "saat": "08:30-19:30",
+                "kart": true,
+                "sgk": true,
+                "nobetci": true
+            }
+        ],
+        "2026-02-05": [
+            {
+                "ad": "Güven Eczanesi",
+                "il": "Kilis",
+                "ilce": "Merkez",
+                "mahalle": "Merkez",
+                "adres": "Cumhuriyet Cd. No:20",
+                "telefon": "03488132773",
+                "maps": "https://www.google.com/maps/search/?api=1&query=Güven+Eczanesi+Kilis",
+                "saat": "08:30-19:30",
+                "kart": true,
+                "sgk": true,
+                "nobetci": true
+            }
+        ],
+        "2026-02-06": [
+            {
+                "ad": "Halk Eczanesi",
+                "il": "Kilis",
+                "ilce": "Merkez",
+                "mahalle": "Yaşar Aktürk Mah.",
+                "adres": "Ünverdi Cd. No:140/B",
+                "telefon": "03488032032",
+                "maps": "https://www.google.com/maps/search/?api=1&query=Halk+Eczanesi+Kilis",
+                "saat": "08:30-19:30",
+                "kart": true,
+                "sgk": true,
+                "nobetci": true
+            }
+        ],
+        "2026-02-07": [
+            {
+                "ad": "Arzu Eczanesi",
+                "il": "Kilis",
+                "ilce": "Merkez",
+                "mahalle": "Kazım Karabekir Mah.",
+                "adres": "Funda Sk. No:15/A-1",
+                "telefon": "03488142250",
+                "maps": "https://www.google.com/maps/search/?api=1&query=Arzu+Eczanesi+Kilis",
+                "saat": "08:30-19:30",
+                "kart": true,
+                "sgk": true,
+                "nobetci": true
+            },
+            {
+                "ad": "Korkut Eczanesi",
+                "il": "Kilis",
+                "ilce": "Merkez",
+                "mahalle": "Fatih Sultan Mehmet Mah.",
+                "adres": "Özkaya Cd. No:4/A-B",
+                "telefon": "03488031282",
+                "maps": "https://www.google.com/maps/search/?api=1&query=Korkut+Eczanesi+Kilis",
+                "saat": "08:30-19:30",
+                "kart": true,
+                "sgk": true,
+                "nobetci": true
+            }
+        ],
+        "2026-02-08": [
+            {
+                "ad": "Savranlı Eczanesi",
+                "il": "Kilis",
+                "ilce": "Merkez",
+                "mahalle": "Kartalbey Mah.",
+                "adres": "Mustafa Baytaz Cd. No:35",
+                "telefon": "03488223633",
+                "maps": "https://www.google.com/maps/search/?api=1&query=Savranlı+Eczanesi+Kilis",
+                "saat": "08:30-19:30",
+                "kart": true,
+                "sgk": true,
+                "nobetci": true
+            },
+            {
+                "ad": "Zeynel Polat Eczanesi",
+                "il": "Kilis",
+                "ilce": "Merkez",
+                "mahalle": "Tekye Mah.",
+                "adres": "Mevlevihane Sk. No:2",
+                "telefon": "03488020607",
+                "maps": "https://www.google.com/maps/search/?api=1&query=Zeynel+Polat+Eczanesi+Kilis",
+                "saat": "08:30-19:30",
+                "kart": true,
+                "sgk": true,
+                "nobetci": true
+            }
+        ],
+        "2026-02-09": [
+            {
+                "ad": "Hamdemirci Eczanesi",
+                "il": "Kilis",
+                "ilce": "Merkez",
+                "mahalle": "Doğan Güreş Paşa Mah.",
+                "adres": "Mustafa Eren Cd. No:36/A",
+                "telefon": "03488138386",
+                "maps": "https://www.google.com/maps/search/?api=1&query=Hamdemirci+Eczanesi+Kilis",
+                "saat": "08:30-19:30",
+                "kart": true,
+                "sgk": true,
+                "nobetci": true
+            }
+        ],
+        "2026-02-10": [
+            {
+                "ad": "İtimat Eczanesi",
+                "il": "Kilis",
+                "ilce": "Merkez",
+                "mahalle": "Merkez",
+                "adres": "Cumhuriyet Meydanı Kestanlıoğlu İş Hanı No:10/C",
+                "telefon": "03488131171",
+                "maps": "https://www.google.com/maps/search/?api=1&query=İtimat+Eczanesi+Kilis",
+                "saat": "08:30-19:30",
+                "kart": true,
+                "sgk": true,
+                "nobetci": true
+            }
+        ],
+        "2026-02-11": [
+            {
+                "ad": "Kayasöken Eczanesi",
+                "il": "Kilis",
+                "ilce": "Merkez",
+                "mahalle": "Yavuz Sultan Selim Mah.",
+                "adres": "Taştepe 1 Sk. No:5/A",
+                "telefon": "05058077779",
+                "maps": "https://www.google.com/maps/search/?api=1&query=Kayasöken+Eczanesi+Kilis",
+                "saat": "08:30-19:30",
+                "kart": true,
+                "sgk": true,
+                "nobetci": true
+            }
+        ],
+        "2026-02-12": [
+            {
+                "ad": "Kepekçi Eczanesi",
+                "il": "Kilis",
+                "ilce": "Merkez",
+                "mahalle": "Şehitler Mah.",
+                "adres": "Canbazlar Sk. No:1/B",
+                "telefon": "03488142233",
+                "maps": "https://www.google.com/maps/search/?api=1&query=Kepekçi+Eczanesi+Kilis",
+                "saat": "08:30-19:30",
+                "kart": true,
+                "sgk": true,
+                "nobetci": true
+            }
+        ],
+        "2026-02-13": [
+            {
+                "ad": "Kılıç Eczanesi",
+                "il": "Kilis",
+                "ilce": "Merkez",
+                "mahalle": "Doğan Güreş Paşa Mah.",
+                "adres": "Mustafa Eren Cd. No:52/A",
+                "telefon": "03488139604",
+                "maps": "https://www.google.com/maps/search/?api=1&query=Kılıç+Eczanesi+Kilis",
+                "saat": "08:30-19:30",
+                "kart": true,
+                "sgk": true,
+                "nobetci": true
+            }
+        ],
+        "2026-02-14": [
+            {
+                "ad": "Halk Eczanesi",
+                "il": "Kilis",
+                "ilce": "Merkez",
+                "mahalle": "Yaşar Aktürk Mah.",
+                "adres": "Ünverdi Cd. No:140/B",
+                "telefon": "03488032032",
+                "maps": "https://www.google.com/maps/search/?api=1&query=Halk+Eczanesi+Kilis",
+                "saat": "08:30-19:30",
+                "kart": true,
+                "sgk": true,
+                "nobetci": true
+            },
+            {
+                "ad": "Polat Eczanesi",
+                "il": "Kilis",
+                "ilce": "Merkez",
+                "mahalle": "Yedi Aralık Mah.",
+                "adres": "Cumhuriyet Cd. No:17",
+                "telefon": "03488132608",
+                "maps": "https://www.google.com/maps/search/?api=1&query=Polat+Eczanesi+Kilis",
+                "saat": "08:30-19:30",
+                "kart": true,
+                "sgk": true,
+                "nobetci": true
+            }
+        ],
+        "2026-02-15": [
+            {
+                "ad": "Hamdemirci Eczanesi",
+                "il": "Kilis",
+                "ilce": "Merkez",
+                "mahalle": "Doğan Güreş Paşa Mah.",
+                "adres": "Mustafa Eren Cd. No:36/A",
+                "telefon": "03488138386",
+                "maps": "https://www.google.com/maps/search/?api=1&query=Hamdemirci+Eczanesi+Kilis",
+                "saat": "08:30-19:30",
+                "kart": true,
+                "sgk": true,
+                "nobetci": true
+            },
+            {
+                "ad": "Nur Eczanesi",
+                "il": "Kilis",
+                "ilce": "Merkez",
+                "mahalle": "Ekrem Çetin Mah.",
+                "adres": "Doğan Güreş Paşa Blv. No:48/A",
+                "telefon": "03488134271",
+                "maps": "https://www.google.com/maps/search/?api=1&query=Nur+Eczanesi+Kilis",
+                "saat": "08:30-19:30",
+                "kart": true,
+                "sgk": true,
+                "nobetci": true
+            }
+        ],
+        "2026-02-16": [
+            {
+                "ad": "Korkmaz Eczanesi",
+                "il": "Kilis",
+                "ilce": "Merkez",
+                "mahalle": "Yedi Aralık Mah.",
+                "adres": "Murtaza Cd. No:66",
+                "telefon": "03488132026",
+                "maps": "https://www.google.com/maps/search/?api=1&query=Korkmaz+Eczanesi+Kilis",
+                "saat": "08:30-19:30",
+                "kart": true,
+                "sgk": true,
+                "nobetci": true
+            }
+        ],
+        "2026-02-17": [
+            {
+                "ad": "Korkut Eczanesi",
+                "il": "Kilis",
+                "ilce": "Merkez",
+                "mahalle": "Fatih Sultan Mehmet Mah.",
+                "adres": "Özkaya Cd. No:4/A-B",
+                "telefon": "03488031282",
+                "maps": "https://www.google.com/maps/search/?api=1&query=Korkut+Eczanesi+Kilis",
+                "saat": "08:30-19:30",
+                "kart": true,
+                "sgk": true,
+                "nobetci": true
+            }
+        ],
+        "2026-02-18": [
+            {
+                "ad": "Köksal Eczanesi",
+                "il": "Kilis",
+                "ilce": "Merkez",
+                "mahalle": "Doğan Güreşpaşa Mah.",
+                "adres": "Kazım Karabekir Cd. No:25/C",
+                "telefon": "03488141488",
+                "maps": "https://www.google.com/maps/search/?api=1&query=Köksal+Eczanesi+Kilis",
+                "saat": "08:30-19:30",
+                "kart": true,
+                "sgk": true,
+                "nobetci": true
+            }
+        ],
+        "2026-02-19": [
+            {
+                "ad": "Mercimekler Eczanesi",
+                "il": "Kilis",
+                "ilce": "Merkez",
+                "mahalle": "Karaali Mah.",
+                "adres": "Türbedar Sk. No:4",
+                "telefon": "05558904261",
+                "maps": "https://www.google.com/maps/search/?api=1&query=Mercimekler+Eczanesi+Kilis",
+                "saat": "08:30-19:30",
+                "kart": true,
+                "sgk": true,
+                "nobetci": true
+            }
+        ],
+        "2026-02-20": [
+            {
+                "ad": "Muhtaroğlu Eczanesi",
+                "il": "Kilis",
+                "ilce": "Merkez",
+                "mahalle": "Alb. İbrahim Karaoğlanoğlu Mah.",
+                "adres": "Ömer Halis Demir Cd. 31/D",
+                "telefon": "03488132232",
+                "maps": "https://www.google.com/maps/search/?api=1&query=Muhtaroğlu+Eczanesi+Kilis",
+                "saat": "08:30-19:30",
+                "kart": true,
+                "sgk": true,
+                "nobetci": true
+            }
+        ],
+        "2026-02-21": [
+            {
+                "ad": "Efe Eczanesi",
+                "il": "Kilis",
+                "ilce": "Merkez",
+                "mahalle": "Yaşar Aktürk Mah.",
+                "adres": "İnönü Blv. No:17/C",
+                "telefon": "03488143738",
+                "maps": "https://www.google.com/maps/search/?api=1&query=Efe+Eczanesi+Kilis",
+                "saat": "08:30-19:30",
+                "kart": true,
+                "sgk": true,
+                "nobetci": true
+            },
+            {
+                "ad": "Tutoğlu Eczanesi",
+                "il": "Kilis",
+                "ilce": "Merkez",
+                "mahalle": "Karaali Mah.",
+                "adres": "Türbedar Sk. No:6/A",
+                "telefon": "03488132081",
+                "maps": "https://www.google.com/maps/search/?api=1&query=Tutoğlu+Eczanesi+Kilis",
+                "saat": "08:30-19:30",
+                "kart": true,
+                "sgk": true,
+                "nobetci": true
+            }
+        ],
+        "2026-02-22": [
+            {
+                "ad": "Gamze Eczanesi",
+                "il": "Kilis",
+                "ilce": "Merkez",
+                "mahalle": "Mehmet Rıfat Kazancıoğlu Mah.",
+                "adres": "Sabit Erentürk Cd. No:26/A",
+                "telefon": "03488142474",
+                "maps": "https://www.google.com/maps/search/?api=1&query=Gamze+Eczanesi+Kilis",
+                "saat": "08:30-19:30",
+                "kart": true,
+                "sgk": true,
+                "nobetci": true
+            },
+            {
+                "ad": "Şifa Eczanesi",
+                "il": "Kilis",
+                "ilce": "Merkez",
+                "mahalle": "Nedim Ökmen Mah.",
+                "adres": "Ali Metin Dirimtekin Cd. No:31/A",
+                "telefon": "03488147079",
+                "maps": "https://www.google.com/maps/search/?api=1&query=Şifa+Eczanesi+Kilis",
+                "saat": "08:30-19:30",
+                "kart": true,
+                "sgk": true,
+                "nobetci": true
+            }
+        ],
+        "2026-02-23": [
+            {
+                "ad": "Neba Eczanesi",
+                "il": "Kilis",
+                "ilce": "Merkez",
+                "mahalle": "İsmet Paşa Mah.",
+                "adres": "Doğan Güreş Paşa Blv. No:42/A",
+                "telefon": "03488138585",
+                "maps": "https://www.google.com/maps/search/?api=1&query=Neba+Eczanesi+Kilis",
+                "saat": "08:30-19:30",
+                "kart": true,
+                "sgk": true,
+                "nobetci": true
+            }
+        ],
+        "2026-02-24": [
+            {
+                "ad": "Nur Eczanesi",
+                "il": "Kilis",
+                "ilce": "Merkez",
+                "mahalle": "Ekrem Çetin Mah.",
+                "adres": "Doğan Güreş Paşa Blv. No:48/A",
+                "telefon": "03488134271",
+                "maps": "https://www.google.com/maps/search/?api=1&query=Nur+Eczanesi+Kilis",
+                "saat": "08:30-19:30",
+                "kart": true,
+                "sgk": true,
+                "nobetci": true
+            }
+        ],
+        "2026-02-25": [
+            {
+                "ad": "Ömür Eczanesi",
+                "il": "Kilis",
+                "ilce": "Merkez",
+                "mahalle": "Kanuni Sultan Süleyman Mah.",
+                "adres": "Sörhabil Cd. No:94",
+                "telefon": "03488132053",
+                "maps": "https://www.google.com/maps/search/?api=1&query=Ömür+Eczanesi+Kilis",
+                "saat": "08:30-19:30",
+                "kart": true,
+                "sgk": true,
+                "nobetci": true
+            }
+        ],
+        "2026-02-26": [
+            {
+                "ad": "Öndeş Eczanesi",
+                "il": "Kilis",
+                "ilce": "Merkez",
+                "mahalle": "Atatürk Mah.",
+                "adres": "Atasoy Sk. No:4/3",
+                "telefon": "03488139962",
+                "maps": "https://www.google.com/maps/search/?api=1&query=Öndeş+Eczanesi+Kilis",
+                "saat": "08:30-19:30",
+                "kart": true,
+                "sgk": true,
+                "nobetci": true
+            }
+        ],
+        "2026-02-27": [
+            {
+                "ad": "Özkaptan Eczanesi",
+                "il": "Kilis",
+                "ilce": "Merkez",
+                "mahalle": "7 Aralık Mah.",
+                "adres": "7 Aralık Mahallesi Topaloğlu Caddesi No:29/B",
+                "telefon": "03488132040",
+                "maps": "https://www.google.com/maps/search/?api=1&query=Özkaptan+Eczanesi+Kilis",
+                "saat": "08:30-19:30",
+                "kart": true,
+                "sgk": true,
+                "nobetci": true
+            }
+        ],
+        "2026-02-28": [
+            {
+                "ad": "Esra Nur Eczanesi",
+                "il": "Kilis",
+                "ilce": "Merkez",
+                "mahalle": "Yavuz Sultan Selim Mah.",
+                "adres": "Yavuz Sultan Selim Mahallesi Taştepe Sokak No:5/B (Ziraat Odası yanı)",
+                "telefon": "03488137172",
+                "maps": "https://www.google.com/maps/search/?api=1&query=Esra+Nur+Eczanesi+Kilis",
+                "saat": "08:30-19:30",
+                "kart": true,
+                "sgk": true,
+                "nobetci": true
+            },
+            {
+                "ad": "Kepekçi Eczanesi",
+                "il": "Kilis",
+                "ilce": "Merkez",
+                "mahalle": "Şehitler Mah.",
+                "adres": "Şehitler Mahallesi Canbazlar Sokak No:1/B (Valilik yanı)",
+                "telefon": "03488142233",
+                "maps": "https://www.google.com/maps/search/?api=1&query=Kepekçi+Eczanesi+Kilis",
+                "saat": "08:30-19:30",
+                "kart": true,
+                "sgk": true,
+                "nobetci": true
+            }
+        ]
+    }
+}
