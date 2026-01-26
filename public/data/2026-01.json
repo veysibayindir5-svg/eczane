@@ -1,0 +1,121 @@
+{
+  "month": "2026-01",
+  "days": {
+    "2026-01-26": [
+      {
+        "ad": "Burcu Eczanesi",
+        "il": "Kilis",
+        "ilce": "Merkez",
+        "mahalle": "Mehmet Rıfat Kazancıoğlu Mah.",
+        "adres": "Turgut Özal Cd. No:23/B (Kayabaş Camii yanı)",
+        "telefon": "03488136333",
+        "maps": "https://www.google.com/maps/search/?api=1&query=Burcu+Eczanesi+Kilis",
+        "saat": "08:30-19:30",
+        "kart": true,
+        "sgk": true,
+        "nobetci": true
+      }
+    ],
+    "2026-01-27": [
+      {
+        "ad": "Erdem Eczanesi",
+        "il": "Kilis",
+        "ilce": "Merkez",
+        "mahalle": "Ekrem Çetin Mah.",
+        "adres": "Turgut Reis Cd. No:19/A",
+        "telefon": "05521777979",
+        "maps": "https://www.google.com/maps/search/?api=1&query=Erdem+Eczanesi+Kilis",
+        "saat": "08:30-19:30",
+        "kart": true,
+        "sgk": true,
+        "nobetci": true
+      }
+    ],
+    "2026-01-28": [
+      {
+        "ad": "Ergezen Eczanesi",
+        "il": "Kilis",
+        "ilce": "Merkez",
+        "mahalle": "Şehit Sakıp Mah.",
+        "adres": "Cumhuriyet Cd. No:240",
+        "telefon": "03488137787",
+        "maps": "https://www.google.com/maps/search/?api=1&query=Ergezen+Eczanesi+Kilis",
+        "saat": "08:30-19:30",
+        "kart": true,
+        "sgk": true,
+        "nobetci": true
+      }
+    ],
+    "2026-01-29": [
+      {
+        "ad": "Eruçan Eczanesi",
+        "il": "Kilis",
+        "ilce": "Merkez",
+        "mahalle": "Doğan Güreş Paşa Mah.",
+        "adres": "Mustafa Eren Cd. No:75B",
+        "telefon": "03488141001",
+        "maps": "https://www.google.com/maps/search/?api=1&query=Eruçan+Eczanesi+Kilis",
+        "saat": "08:30-19:30",
+        "kart": true,
+        "sgk": true,
+        "nobetci": true
+      }
+    ],
+    "2026-01-30": [
+      {
+        "ad": "Şekeroğlu Eczanesi",
+        "il": "Kilis",
+        "ilce": "Merkez",
+        "mahalle": "Karaali Mah.",
+        "adres": "Türbedar Sk. No:1/A",
+        "telefon": "03488138383",
+        "maps": "https://www.google.com/maps/search/?api=1&query=Şekeroğlu+Eczanesi+Kilis",
+        "saat": "08:30-19:30",
+        "kart": true,
+        "sgk": true,
+        "nobetci": true
+      },
+      {
+        "ad": "Deniz Eczanesi",
+        "il": "Kilis",
+        "ilce": "Merkez",
+        "mahalle": "Yedi Aralık Mah.",
+        "adres": "Murtaza Cd. No:30/A",
+        "telefon": "03488143271",
+        "maps": "https://www.google.com/maps/search/?api=1&query=Deniz+Eczanesi+Kilis",
+        "saat": "08:30-19:30",
+        "kart": true,
+        "sgk": true,
+        "nobetci": true
+      }
+    ],
+    "2026-01-31": [
+      {
+        "ad": "Köksal Eczanesi",
+        "il": "Kilis",
+        "ilce": "Merkez",
+        "mahalle": "Doğan Güreşpaşa Mah.",
+        "adres": "Kazım Karabekir Cd. No:25/C",
+        "telefon": "03488141488",
+        "maps": "https://www.google.com/maps/search/?api=1&query=Köksal+Eczanesi+Kilis",
+        "saat": "08:30-19:30",
+        "kart": true,
+        "sgk": true,
+        "nobetci": true
+      },
+      {
+        "ad": "Derman Eczanesi",
+        "il": "Kilis",
+        "ilce": "Merkez",
+        "mahalle": "Ekrem Çetin Mah.",
+        "adres": "Turgutreis Cd.",
+        "telefon": "03488135141",
+        "maps": "https://www.google.com/maps/search/?api=1&query=Derman+Eczanesi+Kilis",
+        "saat": "08:30-19:30",
+        "kart": true,
+        "sgk": true,
+        "nobetci": true
+      }
+    ]
+  }
+}
