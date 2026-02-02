@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { fetchMonthlyData } from '../utils/data';
 import type { Pharmacy } from '../types';
 import { PharmacyCard } from '../components/ui/PharmacyCard';
-import { isDutyTime, getTurkeyDate, formatDisplayDate } from '../utils/time';
+import { isDutyTime, getDutyDate, formatDisplayDate } from '../utils/time';
 import { SEO } from '../components/SEO';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Search, Calendar as CalendarIcon, MapPin, Clock, ShieldCheck } from 'lucide-react';
@@ -14,21 +14,21 @@ export const Home: React.FC = () => {
     const [loading, setLoading] = useState(true);
     const isDuty = isDutyTime();
     const [search, setSearch] = useState('');
-    const [targetDate, setTargetDate] = useState(getTurkeyDate());
+    const [targetDate, setTargetDate] = useState(getDutyDate());
     const [isTomorrow, setIsTomorrow] = useState(false);
 
     const dateStr = format(targetDate, 'yyyy-MM-dd');
     const monthStr = format(targetDate, 'yyyy-MM');
 
     const handleTomorrow = () => {
-        const d = getTurkeyDate();
+        const d = getDutyDate();
         d.setDate(d.getDate() + 1);
         setTargetDate(d);
         setIsTomorrow(true);
     };
 
     const handleToday = () => {
-        setTargetDate(getTurkeyDate());
+        setTargetDate(getDutyDate());
         setIsTomorrow(false);
     };
 
