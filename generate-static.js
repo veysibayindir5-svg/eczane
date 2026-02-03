@@ -6,7 +6,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 const docsDir = path.join(__dirname, 'docs');
-const DOMAIN = 'https://kiliseczane.com';
+const DOMAIN = 'https://www.kiliseczane.com'; // Switched to WWW to match Search Console
 
 const routes = [
     {
@@ -47,13 +47,16 @@ function generate() {
         process.exit(1);
     }
 
-    // Always use the fresh index.html from vite build
     const templatePath = path.join(docsDir, 'index.html');
+    if (!fs.existsSync(templatePath)) {
+        console.error('Error: index.html template not found in docs.');
+        process.exit(1);
+    }
     const template = fs.readFileSync(templatePath, 'utf-8');
 
-    console.log('Generating Enhanced Static HTML for all routes...');
+    console.log('Generating WWW-Standardized Static HTML for all routes...');
 
-    // Load pharmacy data for indexing
+    // Load pharmacy data
     let searchableContent = '';
     try {
         const eczanelerPath = path.join(docsDir, 'data/eczaneler.json');
@@ -62,34 +65,29 @@ function generate() {
             searchableContent = `
         <div style="display:none" aria-hidden="true">
             <h2>Kilis Eczaneler ve Sağlık Kuruluşları</h2>
-            <p>Kilis şehrindeki tüm eczaneler, nöbetçi eczaneler ve hastaneler rehberi.</p>
             <ul>
-            ${eczaneler.map(p => `<li><strong>${p.ad}</strong> - ${p.mahalle} Mah. ${p.ilce} - Tel: ${p.telefon}</li>`).join('')}
+            ${eczaneler.map(p => `<li>${p.ad} - ${p.mahalle} - ${p.telefon}</li>`).join('')}
             </ul>
         </div>`;
         }
-    } catch (e) {
-        console.warn('Data injection skipped:', e.message);
-    }
+    } catch (e) { }
 
     routes.forEach(route => {
         let html = template;
 
-        // Inject Meta Tags
-        const canonicalUrl = `${DOMAIN}${route.path}`;
+        // Canonical URL with WWW and trailing slash for maximum consistency
+        const canonicalUrl = `${DOMAIN}${route.path}${route.path.endsWith('/') ? '' : '/'}`;
+
         const headTags = `
     <title>${route.title}</title>
     <meta name="description" content="${route.desc}" />
     <link rel="canonical" href="${canonicalUrl}" />
     `;
 
-        // Replace existing title and inject meta/canonical
         html = html.replace(/<title>.*?<\/title>/, headTags);
-
-        // Inject searchable content for Google bot
         html = html.replace('</body>', `${searchableContent}</body>`);
 
-        // Determine target path
+        // Write to /folder/index.html
         const targetPath = route.path === '/'
             ? templatePath
             : path.join(docsDir, route.path.slice(1), 'index.html');
@@ -100,10 +98,17 @@ function generate() {
         }
 
         fs.writeFileSync(targetPath, html);
-        console.log(`✓ Processed: ${route.path}`);
+
+        // Also create path.html fallback for some crawlers
+        if (route.path !== '/') {
+            const fallbackPath = path.join(docsDir, `${route.path.slice(1)}.html`);
+            fs.writeFileSync(fallbackPath, html);
+        }
+
+        console.log(`✓ Generated: ${route.path}`);
     });
 
-    console.log('SEO Optimization Complete!');
+    console.log('WWW SEO Optimization Complete!');
 }
 
 generate();
