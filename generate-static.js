@@ -6,6 +6,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 const docsDir = path.join(__dirname, 'docs');
+const DOMAIN = 'https://kiliseczane.com';
 
 const routes = [
     {
@@ -42,68 +43,67 @@ const routes = [
 
 function generate() {
     if (!fs.existsSync(docsDir)) {
-        console.error('Error: docs directory not found. Please run build first.');
+        console.error('Error: docs directory not found.');
         process.exit(1);
     }
 
-    // Read the index.html template from docs
-    const template = fs.readFileSync(path.join(docsDir, 'index.html'), 'utf-8');
+    // Always use the fresh index.html from vite build
+    const templatePath = path.join(docsDir, 'index.html');
+    const template = fs.readFileSync(templatePath, 'utf-8');
 
-    console.log('Generating Hybrid Static HTML for all routes...');
+    console.log('Generating Enhanced Static HTML for all routes...');
 
-    // Load pharmacy data for injection (optional but good for searchability)
-    let extraContent = '';
+    // Load pharmacy data for indexing
+    let searchableContent = '';
     try {
-        const eczaneler = JSON.parse(fs.readFileSync(path.join(docsDir, 'data/eczaneler.json'), 'utf-8'));
-        extraContent = `
-      <div style="display:none" aria-hidden="true">
-        <h2>Kilis Eczaneleri Listesi</h2>
-        <ul>
-          ${eczaneler.map(p => `<li><strong>${p.ad}</strong>: ${p.mahalle} ${p.ilce} - ${p.telefon}</li>`).join('')}
-        </ul>
-      </div>
-    `;
+        const eczanelerPath = path.join(docsDir, 'data/eczaneler.json');
+        if (fs.existsSync(eczanelerPath)) {
+            const eczaneler = JSON.parse(fs.readFileSync(eczanelerPath, 'utf-8'));
+            searchableContent = `
+        <div style="display:none" aria-hidden="true">
+            <h2>Kilis Eczaneler ve Sağlık Kuruluşları</h2>
+            <p>Kilis şehrindeki tüm eczaneler, nöbetçi eczaneler ve hastaneler rehberi.</p>
+            <ul>
+            ${eczaneler.map(p => `<li><strong>${p.ad}</strong> - ${p.mahalle} Mah. ${p.ilce} - Tel: ${p.telefon}</li>`).join('')}
+            </ul>
+        </div>`;
+        }
     } catch (e) {
-        console.warn('Could not load eczaneler.json for data injection');
+        console.warn('Data injection skipped:', e.message);
     }
 
     routes.forEach(route => {
         let html = template;
 
-        // Inject Title and Meta Description
-        html = html.replace(/<title>.*?<\/title>/, `<title>${route.title}</title>`);
+        // Inject Meta Tags
+        const canonicalUrl = `${DOMAIN}${route.path}`;
+        const headTags = `
+    <title>${route.title}</title>
+    <meta name="description" content="${route.desc}" />
+    <link rel="canonical" href="${canonicalUrl}" />
+    `;
 
-        // Check if meta description exists, otherwise inject
-        if (html.includes('name="description"')) {
-            html = html.replace(/<meta name="description" content=".*?" \/>/, `<meta name="description" content="${route.desc}" />`);
-        } else {
-            html = html.replace('</head>', `<meta name="description" content="${route.desc}" /></head>`);
-        }
+        // Replace existing title and inject meta/canonical
+        html = html.replace(/<title>.*?<\/title>/, headTags);
 
-        // Inject extra content for indexing
-        html = html.replace('</body>', `${extraContent}</body>`);
+        // Inject searchable content for Google bot
+        html = html.replace('</body>', `${searchableContent}</body>`);
 
-        // Determine target file path
-        let targetPath;
-        if (route.path === '/') {
-            targetPath = path.join(docsDir, 'index.html');
-        } else {
-            const routeDir = path.join(docsDir, route.path.slice(1));
-            if (!fs.existsSync(routeDir)) {
-                fs.mkdirSync(routeDir, { recursive: true });
-            }
-            targetPath = path.join(routeDir, 'index.html');
+        // Determine target path
+        const targetPath = route.path === '/'
+            ? templatePath
+            : path.join(docsDir, route.path.slice(1), 'index.html');
 
-            // Fix relative paths for JS/CSS assets
-            // Since it's in a subdirectory, /assets/.. is correct if domain root, 
-            // but let's make sure strings are correct.
+        const targetDir = path.dirname(targetPath);
+        if (!fs.existsSync(targetDir)) {
+            fs.mkdirSync(targetDir, { recursive: true });
         }
 
         fs.writeFileSync(targetPath, html);
-        console.log(`✓ Generated ${targetPath}`);
+        console.log(`✓ Processed: ${route.path}`);
     });
 
-    console.log('Hybrid SSG complete!');
+    console.log('SEO Optimization Complete!');
 }
 
 generate();
