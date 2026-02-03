@@ -12,7 +12,8 @@ const routes = [
     'takvim',
     'hastaneler',
     'blog',
-    'iletisim'
+    'iletisim',
+    'nobetci'
 ];
 
 if (!fs.existsSync(distDir)) {
