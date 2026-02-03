@@ -5,9 +5,10 @@ interface Props {
     title: string;
     description: string;
     keywords?: string;
+    structuredData?: object;
 }
 
-export const SEO: React.FC<Props> = ({ title, description, keywords }) => {
+export const SEO: React.FC<Props> = ({ title, description, keywords, structuredData }) => {
     const defaultKeywords = "kilis nöbetçi eczane, kilis eczaneleri, kilis açık eczane, kilis eczane telefon, kilis nöbetçi eczane listesi, kilis 7/24 eczane";
     const finalKeywords = keywords ? `${keywords}, ${defaultKeywords}` : defaultKeywords;
 
@@ -20,6 +21,9 @@ export const SEO: React.FC<Props> = ({ title, description, keywords }) => {
             <meta property="og:description" content={description} />
             <meta property="og:type" content="website" />
             <meta name="robots" content="index, follow" />
+            {structuredData && (
+                <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
+            )}
         </Helmet>
     );
 };

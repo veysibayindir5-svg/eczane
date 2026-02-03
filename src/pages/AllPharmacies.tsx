@@ -38,6 +38,21 @@ export const AllPharmacies: React.FC = () => {
             <SEO
                 title="Kilis Eczaneleri – Tüm Eczaneler Listesi"
                 description="Kilis ilindeki tüm eczanelerin listesi, adres ve telefon bilgileri."
+                structuredData={{
+                    "@context": "https://schema.org",
+                    "@type": "BreadcrumbList",
+                    "itemListElement": [{
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": "Anasayfa",
+                        "item": "https://kiliseczane.com/"
+                    }, {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "name": "Tüm Eczaneler",
+                        "item": "https://kiliseczane.com/eczaneler"
+                    }]
+                }}
             />
 
             <div className="space-y-6">

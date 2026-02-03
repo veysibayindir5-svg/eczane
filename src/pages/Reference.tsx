@@ -48,7 +48,25 @@ export const Hospitals: React.FC = () => {
 
     return (
         <div className="space-y-12">
-            <SEO title="Kilis Hastaneler ve Acil Numaralar – kiliseczane.com" description="Kilis önemli telefonlar ve hastaneler listesi." />
+            <SEO
+                title="Kilis Hastaneler ve Acil Numaralar – kiliseczane.com"
+                description="Kilis önemli telefonlar ve hastaneler listesi."
+                structuredData={{
+                    "@context": "https://schema.org",
+                    "@type": "BreadcrumbList",
+                    "itemListElement": [{
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": "Anasayfa",
+                        "item": "https://kiliseczane.com/"
+                    }, {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "name": "Hastaneler",
+                        "item": "https://kiliseczane.com/hastaneler"
+                    }]
+                }}
+            />
 
             {/* Medical Hero Section */}
             <div className="relative -mt-6 -mx-4 py-16 md:py-20 bg-gradient-to-br from-blue-900 via-blue-700 to-cyan-600 text-white shadow-xl overflow-hidden md:rounded-b-[3rem]">
@@ -163,7 +181,25 @@ export const Hospitals: React.FC = () => {
 export const Contact: React.FC = () => {
     return (
         <div className="py-8 space-y-12">
-            <SEO title="İletişim – kiliseczane.com" description="Bize ulaşın." />
+            <SEO
+                title="İletişim – kiliseczane.com"
+                description="Bize ulaşın."
+                structuredData={{
+                    "@context": "https://schema.org",
+                    "@type": "BreadcrumbList",
+                    "itemListElement": [{
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": "Anasayfa",
+                        "item": "https://kiliseczane.com/"
+                    }, {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "name": "İletişim",
+                        "item": "https://kiliseczane.com/iletisim"
+                    }]
+                }}
+            />
 
             <div className="relative rounded-[2.5rem] overflow-hidden bg-slate-900 text-white py-16 px-6 text-center shadow-2xl mx-4">
                 <div className="absolute inset-0 opacity-20 bg-[url('https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1567&q=80')] bg-cover bg-center"></div>
@@ -201,7 +237,25 @@ export const Contact: React.FC = () => {
 export const Blog: React.FC = () => {
     return (
         <div className="space-y-10 py-4 container mx-auto px-4">
-            <SEO title="Sağlık Rehberi – Blog" description="Sağlık hakkında faydalı bilgiler." />
+            <SEO
+                title="Sağlık Rehberi – Blog"
+                description="Sağlık hakkında faydalı bilgiler."
+                structuredData={{
+                    "@context": "https://schema.org",
+                    "@type": "BreadcrumbList",
+                    "itemListElement": [{
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": "Anasayfa",
+                        "item": "https://kiliseczane.com/"
+                    }, {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "name": "Blog",
+                        "item": "https://kiliseczane.com/blog"
+                    }]
+                }}
+            />
 
             <div className="text-center max-w-2xl mx-auto mb-12">
                 <h1 className="text-4xl font-extrabold text-slate-900 mb-4">Sağlık Rehberi</h1>

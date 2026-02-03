@@ -34,6 +34,21 @@ export const Calendar: React.FC = () => {
             <SEO
                 title="Kilis Nöbetçi Eczane Takvimi - Geçmiş ve Gelecek Nöbetçiler"
                 description="İstediğiniz tarihteki nöbetçi eczaneleri anında sorgulayın."
+                structuredData={{
+                    "@context": "https://schema.org",
+                    "@type": "BreadcrumbList",
+                    "itemListElement": [{
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": "Anasayfa",
+                        "item": "https://kiliseczane.com/"
+                    }, {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "name": "Takvim",
+                        "item": "https://kiliseczane.com/takvim"
+                    }]
+                }}
             />
 
             {/* Gradient Hero Section */}

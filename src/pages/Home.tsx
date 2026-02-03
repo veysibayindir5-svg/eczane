@@ -51,6 +51,18 @@ export const Home: React.FC = () => {
             <SEO
                 title="Kilis Nöbetçi Eczaneler – 7/24 Güncel"
                 description="Kilis nöbetçi eczane listesi, adres ve telefon bilgileri."
+                structuredData={{
+                    "@context": "https://schema.org",
+                    "@type": "WebSite",
+                    "name": "Kilis Eczane",
+                    "url": "https://kiliseczane.com/",
+                    "description": "Kilis nöbetçi eczane listesi, tüm eczaneler, nöbet takvimi ve sağlık kuruluşları.",
+                    "potentialAction": {
+                        "@type": "SearchAction",
+                        "target": "https://kiliseczane.com/eczaneler?q={search_term_string}",
+                        "query-input": "required name=search_term_string"
+                    }
+                }}
             />
 
             {/* Modern Gradient Hero */}
