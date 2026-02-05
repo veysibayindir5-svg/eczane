@@ -9,6 +9,7 @@ import { ArrowRight, Search, Calendar as CalendarIcon, MapPin, Clock, ShieldChec
 import { format } from 'date-fns';
 import { AdUnit } from '../components/ui/AdUnit';
 import { EmbedModal } from '../components/ui/EmbedModal';
+import { ALL_KEYWORDS } from '../utils/keywords';
 
 export const Home: React.FC = () => {
     const [list, setList] = useState<Pharmacy[]>([]);
@@ -242,6 +243,11 @@ export const Home: React.FC = () => {
             </div>
 
             <EmbedModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
+
+            {/* Hidden SEO Keyword Cloud for Crawlers */}
+            <div className="sr-only" aria-hidden="true">
+                {ALL_KEYWORDS.join(', ')}
+            </div>
         </>
     );
 };

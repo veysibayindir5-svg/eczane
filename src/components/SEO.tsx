@@ -1,5 +1,6 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
+import { ALL_KEYWORDS } from '../utils/keywords';
 
 interface Props {
     title: string;
@@ -8,8 +9,9 @@ interface Props {
     structuredData?: object;
 }
 
+
 export const SEO: React.FC<Props> = ({ title, description, keywords, structuredData }) => {
-    const defaultKeywords = "kilis nöbetçi eczane, kilis eczaneleri, kilis açık eczane, kilis eczane telefon, kilis nöbetçi eczane listesi, kilis 7/24 eczane, kilis merkez nöbetçi eczane, kilis bugün nöbetçi eczane, kilis yarın nöbetçi eczane, kilis eczane adresleri, kilis nöbetçi eczaneler bugün, kilis nöbetçi eczane yarın, kilis sağlık rehberi, kilis tıp merkezi, kilis hastane telefonları";
+    const defaultKeywords = ALL_KEYWORDS.join(', ');
     const finalKeywords = keywords ? `${keywords}, ${defaultKeywords}` : defaultKeywords;
 
     return (
