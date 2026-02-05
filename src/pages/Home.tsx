@@ -80,8 +80,9 @@ export const Home: React.FC = () => {
                     </div>
 
                     <h1 className="text-4xl md:text-6xl font-extrabold mb-4 tracking-tight drop-shadow-sm text-glow">
-                        Kilis <span className="text-brand-200">Nöbetçi</span> Eczaneler
+                        Kilis <span className="text-brand-200">Nöbetçi</span> Eczaneleri
                     </h1>
+                    <div className="sr-only">Kilis bugün nöbetçi olan eczanelerin güncel listesi, adres ve telefon bilgileri.</div>
                     <p className="text-brand-100 text-lg md:text-xl font-light mb-8 max-w-2xl mx-auto opacity-90">
                         Sağlığınız için 7/24 hizmet veren en yakın eczaneyi anında bulun.
                     </p>

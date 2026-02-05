@@ -9,7 +9,7 @@ interface Props {
 }
 
 export const SEO: React.FC<Props> = ({ title, description, keywords, structuredData }) => {
-    const defaultKeywords = "kilis nöbetçi eczane, kilis eczaneleri, kilis açık eczane, kilis eczane telefon, kilis nöbetçi eczane listesi, kilis 7/24 eczane";
+    const defaultKeywords = "kilis nöbetçi eczane, kilis eczaneleri, kilis açık eczane, kilis eczane telefon, kilis nöbetçi eczane listesi, kilis 7/24 eczane, kilis merkez nöbetçi eczane, kilis bugün nöbetçi eczane, kilis yarın nöbetçi eczane, kilis eczane adresleri, kilis nöbetçi eczaneler bugün, kilis nöbetçi eczane yarın, kilis sağlık rehberi, kilis tıp merkezi, kilis hastane telefonları";
     const finalKeywords = keywords ? `${keywords}, ${defaultKeywords}` : defaultKeywords;
 
     return (
