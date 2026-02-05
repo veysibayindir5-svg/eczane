@@ -220,12 +220,12 @@ export const Home: React.FC = () => {
             <div className="hidden lg:block fixed left-6 top-1/2 -translate-y-1/2 z-40 group">
                 <button
                     onClick={() => setIsModalOpen(true)}
-                    className="flex flex-col items-center gap-2 bg-white/80 backdrop-blur-md p-3 rounded-2xl shadow-xl border border-white/50 hover:border-brand-300 transition-all duration-500 hover:-translate-y-1 hover:shadow-brand-200/50"
+                    className="flex flex-col items-center gap-2 bg-white/80 backdrop-blur-md p-3 rounded-2xl shadow-xl border border-white/50 hover:border-medical-red transition-all duration-500 hover:-translate-y-1 animate-blink"
                 >
-                    <div className="bg-brand-600 text-white p-3 rounded-xl shadow-lg ring-4 ring-brand-50 group-hover:bg-brand-700 transition-all duration-300 group-hover:scale-110 group-hover:rotate-6">
+                    <div className="bg-medical-red text-white p-3 rounded-xl shadow-lg ring-4 ring-medical-red/10 group-hover:bg-red-600 transition-all duration-300 group-hover:scale-110 group-hover:rotate-6">
                         <Code className="w-6 h-6" />
                     </div>
-                    <span className="text-[10px] font-black text-brand-700 uppercase tracking-tighter text-center leading-[0.8] mt-1 group-hover:text-brand-800">
+                    <span className="text-[10px] font-black text-medical-red uppercase tracking-tighter text-center leading-[0.8] mt-1 group-hover:text-red-700">
                         SİTENE<br />EKLE
                     </span>
                 </button>
