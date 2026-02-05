@@ -5,9 +5,10 @@ import { PharmacyCard } from '../components/ui/PharmacyCard';
 import { isDutyTime, getDutyDate, formatDisplayDate } from '../utils/time';
 import { SEO } from '../components/SEO';
 import { Link } from 'react-router-dom';
-import { ArrowRight, Search, Calendar as CalendarIcon, MapPin, Clock, ShieldCheck } from 'lucide-react';
+import { ArrowRight, Search, Calendar as CalendarIcon, MapPin, Clock, ShieldCheck, Code } from 'lucide-react';
 import { format } from 'date-fns';
 import { AdUnit } from '../components/ui/AdUnit';
+import { EmbedModal } from '../components/ui/EmbedModal';
 
 export const Home: React.FC = () => {
     const [list, setList] = useState<Pharmacy[]>([]);
@@ -16,6 +17,7 @@ export const Home: React.FC = () => {
     const [search, setSearch] = useState('');
     const [targetDate, setTargetDate] = useState(getDutyDate());
     const [isTomorrow, setIsTomorrow] = useState(false);
+    const [isModalOpen, setIsModalOpen] = useState(false);
 
     const dateStr = format(targetDate, 'yyyy-MM-dd');
     const monthStr = format(targetDate, 'yyyy-MM');
@@ -160,8 +162,6 @@ export const Home: React.FC = () => {
                                             Tüm Eczaneler <ArrowRight className="w-3 h-3" />
                                         </Link>
                                     </div>
-
-                                    {/* Close/Dismiss handle could go here if needed */}
                                 </div>
                             </div>
                         )}
@@ -215,6 +215,32 @@ export const Home: React.FC = () => {
 
                 </div>
             </div>
+
+            {/* Desktop-only Sitene Ekle Floating Button */}
+            <div className="hidden lg:block fixed left-6 top-1/2 -translate-y-1/2 z-40 group">
+                <button
+                    onClick={() => setIsModalOpen(true)}
+                    className="flex flex-col items-center gap-2 bg-white/80 backdrop-blur-md p-3 rounded-2xl shadow-xl border border-white/50 hover:border-brand-300 transition-all duration-500 hover:-translate-y-1 hover:shadow-brand-200/50"
+                >
+                    <div className="bg-brand-600 text-white p-3 rounded-xl shadow-lg ring-4 ring-brand-50 group-hover:bg-brand-700 transition-all duration-300 group-hover:scale-110 group-hover:rotate-6">
+                        <Code className="w-6 h-6" />
+                    </div>
+                    <span className="text-[10px] font-black text-brand-700 uppercase tracking-tighter text-center leading-[0.8] mt-1 group-hover:text-brand-800">
+                        SİTENE<br />EKLE
+                    </span>
+                </button>
+
+                {/* Tooltip-like label */}
+                <div className="absolute left-full ml-4 top-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 pointer-events-none transition-all duration-500 translate-x-2 group-hover:translate-x-0">
+                    <div className="bg-slate-900 text-white text-[10px] font-bold px-3 py-2 rounded-xl shadow-2xl whitespace-nowrap flex items-center gap-2 border border-slate-800">
+                        <div className="w-2 h-2 bg-brand-400 rounded-full animate-pulse"></div>
+                        Ücretsiz Widget Alın
+                        <div className="absolute left-0 top-1/2 -translate-x-[4px] -translate-y-1/2 w-2 h-2 bg-slate-900 border-l border-b border-slate-800 rotate-45"></div>
+                    </div>
+                </div>
+            </div>
+
+            <EmbedModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
         </>
     );
 };
