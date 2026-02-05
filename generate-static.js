@@ -38,6 +38,11 @@ const routes = [
         path: '/iletisim',
         title: 'İletişim | Kilis Eczane',
         desc: 'Bize ulaşın, öneri ve taleplerinizi iletin.'
+    },
+    {
+        path: '/embed',
+        title: 'Sitene Ekle | Kilis Nöbetçi Eczane Widget',
+        desc: 'Kilis nöbetçi eczane bilgilerini kendi web sitenize ekleyin.'
     }
 ];
 
